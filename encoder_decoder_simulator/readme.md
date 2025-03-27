@@ -16,6 +16,14 @@ This project simulates an RF transmission system using frequency sweeps. The sen
   - Randomized intervals between silence and transmission.
   The sweeps are appended to `sweeps.csv`.
 
+Technique: Simple binary FSK (fixed tone = bit)
+Example:
+
+18 kHz = bit 1
+19 kHz = bit 0
+17 kHz = handshake
+Detection: FFT peak = frequency → binary
+
 - **decoder.py**  
   Reads `sweeps.csv`, groups sweeps by timestamp, identifies transmissions via the preamble/postamble, and decodes the message from the message region.
 
