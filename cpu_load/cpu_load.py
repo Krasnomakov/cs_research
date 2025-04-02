@@ -4,7 +4,7 @@ import time
 # Function to perform a CPU-intensive task (e.g., calculating primes)
 def cpu_load():
     primes = []
-    candidate = 2
+    candidate = 8
     while True:
         is_prime = all(candidate % i != 0 for i in range(2, int(candidate ** 0.5) + 1))
         if is_prime:
