@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: libhackrf
+Version: 0.2
+Summary: A Python library for interfacing with HackRF software-defined radio hardware, enabling signal reception and transmission, frequency scanning, and data processing.
+Author-email: Yeison Cardona <yencardonaal@unal.edu.co>
+Maintainer-email: Yeison Cardona <yencardonaal@unal.edu.co>
+License: BSD-2-Clause
+Project-URL: Repository, https://github.com/dunderlab/python-libhackrf
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Provides-Extra: dev
+Requires-Dist: numpy; extra == "dev"
+
+# Python HackRF
+
+## Installation Instructions
+
+To install the required dependencies for this project, you can use the following command:
+
+```bash
+pip install libhackrf
+```
+
+## Why this package?
+
+The HackRF device is designed for software-defined radio applications, providing a versatile platform for experimentation and development. This package facilitates easy access to its functionality, allowing users to quickly implement and test their ideas.
+
+- Supports a wide range of frequencies
+- Compatible with various software frameworks
+- Ideal for educational purposes and research
+
+## Sweep Scanning
+
+This package implements sweep scanning effectively, allowing users to specify frequency bands, sample rates, and step widths for scanning radio frequencies. The asynchronous scanning process captures filtered data, enabling real-time analysis and visualization of signals across the specified frequency ranges.
+
+Users can define custom callback functions to process the scanned data, providing flexibility for different applications, whether for educational purposes, signal detection, or research.
+
+![Sweep Scanning](https://raw.githubusercontent.com/dunderlab/python-libhackrf/master/docs/source/notebooks/_images/sweep.png "Sweep Scanning")
+
+For example, to configure FM scanning, you can use the following setup:
+
+![Sweep Scanning](https://raw.githubusercontent.com/dunderlab/python-libhackrf/master/docs/source/notebooks/_images/sweepFM.png "Sweep Scanning")
+
+This configuration allows you to scan the FM broadcast band from 88 MHz to 108 MHz, with a sample rate of 8 MHz, stepping 2 MHz at a time. The `step_offset` can be adjusted as needed for specific scenarios.
