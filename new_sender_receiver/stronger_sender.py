@@ -4,18 +4,20 @@ import time
 import numpy as np
 
 # -------- CONFIG --------
-BITSTREAM = "010"         # literal, not ascii
-DELAY_ONE = 0.03          # duration for bit '1'
-DELAY_ZERO = 0.03         # duration for bit '0'
-NUM_THREADS = 8           # stress CPU
-ARRAY_SIZE = 10_000       # memory churn
-REPEAT_PAUSE = 0.5        # delay after full pattern
+BITSTREAM = "010"          # literal bits
+DELAY_ONE = 0.1            # longer '1'
+DELAY_ZERO = 0.03
+NUM_THREADS = 16           # more than # of cores
+ARRAY_SIZE = 200_000       # bigger memory churn
+REPEAT_PAUSE = 1.0         # pause after each pattern
 
 def load_cpu_memory(stop_event):
-    arr1 = np.random.randint(0, 255, size=(ARRAY_SIZE,), dtype=np.uint8)
-    arr2 = np.random.randint(0, 255, size=(ARRAY_SIZE,), dtype=np.uint8)
+    # Heavier loop
+    mat_dim = 400  # NxN
     while not stop_event.is_set():
-        _ = np.dot(arr1, arr2)
+        mat1 = np.random.randint(0, 255, size=(mat_dim, mat_dim), dtype=np.uint8)
+        mat2 = np.random.randint(0, 255, size=(mat_dim, mat_dim), dtype=np.uint8)
+        _ = mat1 @ mat2  # matrix multiplication
 
 def start_heavy_threads():
     stop_event = threading.Event()
@@ -32,6 +34,9 @@ def transmit_bitstream(bitstream):
             stop_event, threads = start_heavy_threads()
             time.sleep(DELAY_ONE)
             stop_event.set()
+            # Wait for all threads to exit
+            for t in threads:
+                t.join()
         else:
             time.sleep(DELAY_ZERO)
 
