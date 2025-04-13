@@ -145,5 +145,3 @@ Contributions, suggestions, and issue reports are welcome. Please feel free to f
 *(Consider adding links to specific papers or project documentation here)*
 
 ---
-
-*Generated based on provided project description.*
