@@ -19,10 +19,10 @@ import SoapySDR
 from SoapySDR import *  # SOAPY_SDR_ constants
 
 ###################### CONFIG ######################
-PI_HOST = "100.78.212.47"      # Pi IP or hostname
-PI_USERNAME = "hdmiadapter"
-PI_PASSWORD = "1234"     # or None if using key-based auth
-REMOTE_LOAD_SCRIPT = "python3 /home/hdmiadapter/Documents/cs_research/new_sender_receiver/cpu_load.py"
+PI_HOST = "your_ip"
+PI_USER = "your_user_name"
+PI_PASS = "your_password"
+REMOTE_SENDER_CMD = "python3 -u /home/your_user_name/Documents/new_sender_receiver/cpu_load.py"
 
 # SDR capture settings
 FREQ_HZ = 20e6         # 20 MHz (example)

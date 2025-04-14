@@ -26,10 +26,10 @@ import SoapySDR
 from SoapySDR import *  # SOAPY_SDR_ constants
 
 ######################## CONFIG ########################
-PI_HOST = "100.78.212.47"
-PI_USER = "hdmiadapter"
-PI_PASS = "1234"
-REMOTE_SENDER_CMD = "python3 -u /home/hdmiadapter/Documents/new_sender_receiver/stronger_sender.py"
+PI_HOST = "your_ip"
+PI_USER = "your_user_name"
+PI_PASS = "your_password"
+REMOTE_SENDER_CMD = "python3 -u /home/your_user_name/Documents/new_sender_receiver/stronger_sender.py"
 
 CAPTURE_SECS = 10.0
 OUTPUT_IQ_FILE = "capture_18mhz.iq"
