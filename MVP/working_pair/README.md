@@ -24,6 +24,8 @@ This project implements a minimal viable prototype (MVP) for a covert channel th
 
 ---
 
+![Project Setup](setup.jpg)
+
 ## Components
 
 ### Transmitter (C Program)
