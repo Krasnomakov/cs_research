@@ -138,10 +138,3 @@ Potential areas for development and research include:
 Contributions, suggestions, and issue reports are welcome. Please feel free to fork the repository, create a branch, and submit a pull request. As this is a research prototype exploring covert channel potential, use it responsibly and ethically.
 
 ---
-
-## References
-
-*For more detailed information, please refer to the project's design documentation and relevant research papers on EM covert channels (e.g., ODINI).*
-*(Consider adding links to specific papers or project documentation here)*
-
----
