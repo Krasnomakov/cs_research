@@ -5,6 +5,8 @@
 
 A collection of minimal viable products (MVPs) exploring diverse methods of creating communication systems, with a special focus on covert channels and advanced signaling techniques.
 
+Technical report for Fontys Cybersecurity Research Group can be found in **publications** directory.
+
 ---
 
 ## 🚀 Projects
@@ -75,3 +77,4 @@ This collection demonstrates a variety of skills and technologies, including:
 ---
 
 For more detailed information, please refer to the `README.md` file within each project's directory.
+
