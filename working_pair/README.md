@@ -2,6 +2,8 @@
 
 This project implements a minimal viable prototype (MVP) for a covert channel that leverages CPU load modulation on a Raspberry Pi 4 to generate electromagnetic (EM) emissions. Inspired by the ODINI channel, the system demonstrates air-gap communication by transmitting a single bit using On-Off Keying (OOK) modulation. The design also includes a receiver component that uses GQRX via TCP/IP (accessed with Telnet) to monitor changes in the EM signal level.
 
+**Demo:** https://vimeo.com/1075115790
+
 ---
 
 ## Table of Contents
