@@ -3,7 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 
-A collection of minimal viable products (MVPs) exploring diverse methods of creating communication systems, with a special focus on covert channels and advanced signaling techniques.
+A collection of scripts exploring diverse methods of creating communication systems, with a special focus on covert channels and advanced signaling techniques.
 
 Technical report for Fontys Cybersecurity Research Group can be found in **publications** directory.
 
