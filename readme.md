@@ -5,7 +5,7 @@
 
 A collection of scripts exploring diverse methods of creating communication systems, with a special focus on covert channels and advanced signaling techniques.
 
-Technical report for Fontys Cybersecurity Research Group can be found in **publications** directory.
+Technical report about the prelimianry phase of this project for Fontys Cybersecurity Research Group can be found in **publications** directory.
 
 **Extended and upgraded version of the working prototype can be found in this repo: https://github.com/HiteshManglani123/air-gapped** 
 
