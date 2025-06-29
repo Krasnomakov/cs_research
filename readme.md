@@ -7,6 +7,7 @@ A collection of scripts exploring diverse methods of creating communication syst
 
 Technical report for Fontys Cybersecurity Research Group can be found in **publications** directory.
 
+Extended and upgraded version of the working prototype can be found in this repo: https://github.com/HiteshManglani123/air-gapped 
 ---
 
 ## 🚀 Projects
